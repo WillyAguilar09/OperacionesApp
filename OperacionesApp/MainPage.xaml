@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:viewModels="clr-namespace:OperacionesApp.ViewModels"
+            x:Class="OperacionesApp.MainPage">
+
+    <!-- Pestaña para calcular el área del cuadrado -->
+    <ContentPage Title="Área del cuadrado">
+        <ContentPage.BindingContext>
+            <viewModels:AreaCuadradoViewModel />
+        </ContentPage.BindingContext>
+        <StackLayout Padding="20">
+            <Label Text="Lado del cuadrado:" />
+            <Entry Text="{Binding Lado}" Placeholder="Ingresa el lado del cuadrado" Keyboard="Numeric"/>
+            <Button Text="Calcular área" Command="{Binding CalcularAreaCommand}"/>
+            <Label Text="{Binding Resultado}" FontSize="Medium"/>
+        </StackLayout>
+    </ContentPage>
+
+    <!-- Pestaña para calcular el área del círculo -->
+    <ContentPage Title="Área del círculo">
+        <ContentPage.BindingContext>
+            <viewModels:AreaCirculoViewModel />
+        </ContentPage.BindingContext>
+        <StackLayout Padding="20">
+            <Label Text="Radio del círculo:" />
+            <Entry Text="{Binding Radio}" Placeholder="Ingresa el radio del círculo" Keyboard="Numeric"/>
+            <Button Text="Calcular área" Command="{Binding CalcularAreaCommand}"/>
+            <Label Text="{Binding Resultado}" FontSize="Medium"/>
+        </StackLayout>
+    </ContentPage>
+
+    <!-- Pestaña para calcular el área del rectángulo -->
+    <ContentPage Title="Área del rectángulo">
+        <ContentPage.BindingContext>
+            <viewModels:AreaRectanguloViewModel />
+        </ContentPage.BindingContext>
+        <StackLayout Padding="20">
+            <Label Text="Base del rectángulo:" />
+            <Entry Text="{Binding Base}" Placeholder="Ingresa la base del rectángulo" Keyboard="Numeric"/>
+            <Label Text="Altura del rectángulo:" />
+            <Entry Text="{Binding Altura}" Placeholder="Ingresa la altura del rectángulo" Keyboard="Numeric"/>
+            <Button Text="Calcular área" Command="{Binding CalcularAreaCommand}"/>
+            <Label Text="{Binding Resultado}" FontSize="Medium"/>
+        </StackLayout>
+    </ContentPage>
+
+</TabbedPage>

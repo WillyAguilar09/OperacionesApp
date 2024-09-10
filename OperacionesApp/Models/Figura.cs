@@ -1,0 +1,6 @@
+﻿
+
+namespace OperacionesApp.Models
+{
+
+}
