@@ -4,7 +4,7 @@
             xmlns:viewModels="clr-namespace:OperacionesApp.ViewModels"
             x:Class="OperacionesApp.MainPage">
 
-    <!-- Pestaña para calcular el área del cuadrado -->
+    <!-- calcular el área del cuadrado -->
     <ContentPage Title="Área del cuadrado">
         <ContentPage.BindingContext>
             <viewModels:AreaCuadradoViewModel />
@@ -17,7 +17,7 @@
         </StackLayout>
     </ContentPage>
 
-    <!-- Pestaña para calcular el área del círculo -->
+    <!-- calcular el área del círculo -->
     <ContentPage Title="Área del círculo">
         <ContentPage.BindingContext>
             <viewModels:AreaCirculoViewModel />
@@ -30,7 +30,7 @@
         </StackLayout>
     </ContentPage>
 
-    <!-- Pestaña para calcular el área del rectángulo -->
+    <!-- calcular el área del rectángulo -->
     <ContentPage Title="Área del rectángulo">
         <ContentPage.BindingContext>
             <viewModels:AreaRectanguloViewModel />
